@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/zfs_initial_setup":{"create":true,"mount_options":["dmode=775","fmode=777","uid=1000","gid=1000","_netdev"],"guestpath":"/home/vagrant/zfs_initial_setup","hostpath":"/home/jegj/projects/jegj/zfs_initial_setup","disabled":false,"__vagrantfile":true}}}
