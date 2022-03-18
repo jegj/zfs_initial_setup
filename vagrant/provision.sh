@@ -28,7 +28,7 @@ fi
 
 apt-get update
 
-apt install -y "python3-pip" "postgresql-server-dev-$PGVERSION" "postgresql-contrib-$PGVERSION"
+apt install -y "zfsutils-linux" "python3-pip" "postgresql-server-dev-$PGVERSION" "postgresql-contrib-$PGVERSION"
 
 echo "configure postgresql..."
 

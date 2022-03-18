@@ -20,9 +20,9 @@ Vagrant.configure("2") do |config|
 		vb.name = VMNAME
 	end
 
-	config.vm.disk :disk, name: "dev1", size: "25GB"
-	config.vm.disk :disk, name: "dev2", size: "25GB"
-	config.vm.disk :disk, name: "dev3", size: "25GB"
+	config.vm.disk :disk, name: "dev1", size: "15GB"
+	config.vm.disk :disk, name: "dev2", size: "15GB"
+	config.vm.disk :disk, name: "dev3", size: "15GB"
 
 	config.vm.define "zfsvm" do |zfsvm|
 		zfsvm.vm.box = "generic/ubuntu2004"
