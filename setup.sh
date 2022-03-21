@@ -1,7 +1,7 @@
-# striped pool
-sudo zpool create data /dev/sdb /dev/sdc
+# stripe pool RAID 0
+sudo zpool create dbstorage /dev/sdb /dev/sdc -o ashift=12
 
-# mirror pool
+# mirror pool RAID 1
 sudo zpool create data mirror /dev/sdb /dev/sdc
 
 # mount on a different mount point
@@ -22,3 +22,9 @@ sudo zpool add data /dev/sdd
 # check data integrity
 sudo zpool scrub data
 zpool status -v data
+
+# show data statistics
+zpool iostat -v
+
+##Continuous monitor every 5 seconds
+zpool iostat -v 5
