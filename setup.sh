@@ -26,5 +26,8 @@ zpool status -v data
 # show data statistics
 zpool iostat -v
 
-##Continuous monitor every 5 seconds
+# Continuous monitor every 5 seconds
 zpool iostat -v 5
+
+# Add spare disk
+zpool add dbstorage spare /dev/sdd
