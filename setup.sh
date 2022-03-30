@@ -1,5 +1,5 @@
 # stripe pool RAID 0
-sudo zpool create dbstorage /dev/sdb /dev/sdc -o ashift=12
+sudo zpool create dbstorage /dev/sdb /dev/sdc -o ashift=12 -o autoexpand=on
 
 # mirror pool RAID 1
 sudo zpool create data mirror /dev/sdb /dev/sdc
