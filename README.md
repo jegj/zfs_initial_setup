@@ -11,3 +11,4 @@ cd vagrant && VAGRANT_EXPERIMENTAL=disks vagrant up
 - https://www.csparks.com/ZFS%20Without%20Tears.md
 - https://forums.lawrencesystems.com/t/freenas-truenas-zfs-pools-raidz-raidz2-raidz3-capacity-integrity-and-performance/3569
 - https://bun.uptrace.dev/postgres/zero-downtime-migrations.html#update-rows-in-a-consistent-order
+- https://lackofimagination.org/2022/04/our-experience-with-postgresql-on-zfs/
